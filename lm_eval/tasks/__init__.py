@@ -40,6 +40,7 @@ from . import drop
 from . import unscramble
 from . import logiqa
 from . import hendrycks_test
+from . import hendrycks_test2
 from . import hendrycks_math
 from . import cbt
 from . import lambada_cloze
@@ -199,6 +200,7 @@ TASK_REGISTRY = {
     #   e.g. anli, arithmetic, openai_translations, harness_translations
     # hendrycksTest (57 tasks)
     **hendrycks_test.create_all_tasks(),
+    **hendrycks_test2.create_all_tasks(),
     # e.g. wmt14-fr-en
     **translation.create_tasks_from_benchmarks(gpt3_translation_benchmarks),
     # chef's selection, mostly wmt20
