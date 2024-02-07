@@ -8,14 +8,17 @@ from . import babi
 from . import superglue
 from . import glue
 from . import arc
+from . import arc2
 from . import coqa
 from . import race
 from . import webqs
 from . import anli
 from . import wsc273
 from . import winogrande
+from . import winogrande2
 from . import quac
 from . import hellaswag
+from . import hellaswag2
 from . import swag
 from . import openbookqa
 from . import squad
@@ -52,6 +55,7 @@ from . import truthfulqa
 from . import blimp
 from . import asdiv
 from . import gsm8k
+from . import gsm8k2
 from . import storycloze
 from . import toxigen
 from . import crowspairs
@@ -144,10 +148,13 @@ TASK_REGISTRY = {
     "qa4mre_2013": qa4mre.QA4MRE_2013,
     "triviaqa": triviaqa.TriviaQA,
     "arc_easy": arc.ARCEasy,
+    "arc_easy2": arc2.ARCEasy2,
     "arc_challenge": arc.ARCChallenge,
+    "arc_challenge2": arc2.ARCChallenge2,
     # "quac": quac.QuAC, # not implemented yet
     "logiqa": logiqa.LogiQA,
     "hellaswag": hellaswag.HellaSwag,
+    "hellaswag2": hellaswag2.HellaSwag2,
     "swag": swag.SWAG,
     "openbookqa": openbookqa.OpenBookQA,
     "squad2": squad.SQuAD2,
@@ -161,6 +168,7 @@ TASK_REGISTRY = {
     "webqs": webqs.WebQs,
     "wsc273": wsc273.WinogradSchemaChallenge273,
     "winogrande": winogrande.Winogrande,
+    "winogrande2": winogrande2.Winogrande2,
     "anli_r1": anli.ANLIRound1,
     "anli_r2": anli.ANLIRound2,
     "anli_r3": anli.ANLIRound3,
@@ -185,6 +193,7 @@ TASK_REGISTRY = {
     "math_precalc": hendrycks_math.MathPrecalculus,
     "math_asdiv": asdiv.Asdiv,
     "gsm8k": gsm8k.GradeSchoolMath8K,
+    "gsm8k2": gsm8k2.GradeSchoolMath8K2,
     # arithmetic
     "arithmetic_2da": arithmetic.Arithmetic2DPlus,
     "arithmetic_2ds": arithmetic.Arithmetic2DMinus,
